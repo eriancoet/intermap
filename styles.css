@@ -85,10 +85,8 @@ li.active a, a:hover, a:active {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .centered-y {
-  position: absolute;
-  width: 100%;
+  position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -140,8 +138,9 @@ li.active a, a:hover, a:active {
   padding: 0;
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
-  width: 300px;
-  height: 220px;
+  width: 600px;
+  height: 420px;
+  
   color: #e5e5e5;
   z-index: 1;
   transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out;
@@ -158,4 +157,19 @@ li.active a, a:hover, a:active {
 }
 .distribution-map .map-point:active .content a:hover, .distribution-map .map-point:active .content a:active, .distribution-map .map-point:focus .content a:hover, .distribution-map .map-point:focus .content a:active {
   color: #afe1fa;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1a1a1a;
+  color: #e5e5e5;
+  text-align: center;
+  font-family: "Roboto", Helvetica, sans-serif;
+}
+
+.india {
+  height: 30px;
+  width: auto;
 }
